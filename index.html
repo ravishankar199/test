@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <a-scene
+      webxr="optionalfeatures: dom-overlsay; overlayElement; canvas; refernceSpaceType; local;"
+    >
+      <a-entity cursor="rayOrigin: mouse" />
+
+      <a-entity
+        position="-4 0 -4"
+        rotation="-90 0 0"
+        data-cardvalue="A"
+        onclick="onCardClicked(event)"
+      >
+        <a-plane
+          width="2"
+          height="2"
+          color="#00ff00"
+          material="side: double"
+        ></a-plane>
+        <a-text
+          value="A"
+          position="0 0 -.4"
+          color="#000"
+          rotation="0 180 0"
+          material="side: double"
+        ></a-text>
+      </a-entity>
+
+      <a-entity
+        position="0 0 -4"
+        rotation="-90 0 0"
+        material="side: double"
+        data-cardvalue="B"
+        onclick="onCardClicked(event)"
+      >
+        <a-plane
+          width="2"
+          height="2"
+          color="#00ff00"
+          material="side: double"
+        ></a-plane>
+        <a-text
+          value="B"
+          position="0 0 -.4"
+          rotation="0 180 0"
+          color="#000"
+          material="side: double"
+        ></a-text>
+      </a-entity>
+
+      <a-entity
+        position="4 0 -4"
+        rotation="-90 0 0"
+        material="side: double"
+        data-cardvalue="C"
+        onclick="onCardClicked(event)"
+      >
+        <a-plane
+          width="2"
+          height="2"
+          color="#00ff00"
+          material="side: double"
+        ></a-plane>
+        <a-text
+          value="C"
+          position="0 0 -.4"
+          color="#000"
+          rotation="0 180 0"
+          material="side: double"
+        ></a-text>
+      </a-entity>
+
+      <a-entity
+        position="-4 0 0"
+        rotation="-90 0 0"
+        material="side: double"
+        data-cardvalue="A"
+        onclick="onCardClicked(event)"
+      >
+        <a-plane
+          width="2"
+          height="2"
+          color="#00ff00"
+          material="side: double"
+        ></a-plane>
+        <a-text
+          value="A"
+          position="0 0 -.4"
+          rotation="0 180 0"
+          color="#000"
+        ></a-text>
+      </a-entity>
+
+      <a-entity
+        position="0 0 0"
+        rotation="-90 0 0"
+        material="side: double"
+        data-cardvalue="B"
+        onclick="onCardClicked(event)"
+      >
+        <a-plane
+          width="2"
+          height="2"
+          color="#00ff00"
+          material="side: double"
+        ></a-plane>
+        <a-text
+          value="B"
+          position="0 0 -.4"
+          rotation="0 180 0"
+          color="#000"
+        ></a-text>
+      </a-entity>
+
+      <a-entity
+        position="4 0 0"
+        rotation="-90 0 0"
+        material="side: double"
+        data-cardvalue="C"
+        onclick="onCardClicked(event)"
+      >
+        <a-plane
+          width="2"
+          height="2"
+          color="#00ff00"
+          material="side: double"
+        ></a-plane>
+        <a-text
+          value="C"
+          position="0 0 -.4"
+          rotation="0 180 0"
+          color="#000"
+        ></a-text>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
